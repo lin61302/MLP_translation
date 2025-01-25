@@ -276,7 +276,7 @@ if __name__ == '__main__':
 
     # lan_dic = {'MOZ': ['pt2'], 'IDN': ['id'], 'CMR':['fr'], 'MAR':['ar','fr'], 'AGO': ['pt2'], 'PRY':['es'], 'MRT':['ar','fr']}
     # lan_dic = { 'DZA':['fr','ar'], 'ALB':['sq'],'MKD':['mk','sq'],'KHM':['km2'],'UKR':['uk','ru'],'UZB':['ru','uz'] }
-    lan_dic = {'MRT':['fr','ar']} 
+    lan_dic = {'CMR':['fr'],'TUN':['fr','ar'],'LKA':['si']} 
 
 
     for country, languages in lan_dic.items():
@@ -288,7 +288,12 @@ if __name__ == '__main__':
             print(f'Start: {source_domains} -----in----- {language}')
             translate_pipe(uri, language, 128, source_domains)
             print(f'Done: {source_domains} -----in----- {language}')
+            # Git operations
+            commit_message = "translation ({country} - {language}) update"
+            run_git_commands(commit_message)
     print("it's working")
+
+    
 
     # lan_dic = {'fr': ['SEN', 'BFA', 'BEN', 'CMR' ], 'es':['COL','SLV','NIC'], 'ru':['ARM'], 'hy':['ARM'], 'ur':['PAK']}
     # lan_dic = {'be':['BLR'], 'ru':['BLR'],'hu':['HUN'],'fr':['SEN'],'bn':['BGD'],'sq':['XKX']}
