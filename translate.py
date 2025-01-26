@@ -289,7 +289,7 @@ if __name__ == '__main__':
             translate_pipe(uri, language, 128, source_domains)
             print(f'Done: {source_domains} -----in----- {language}')
             # Git operations
-            commit_message = "translation ({country} - {language}) update"
+            commit_message = f"translation ({country} - {language}) update"
             run_git_commands(commit_message)
     print("it's working")
 
