@@ -251,8 +251,8 @@ class Translator:
 if __name__ == '__main__':
     uri = 'mongodb://zungru:balsas.rial.tanoaks.schmoe.coffing@db-wibbels.sas.upenn.edu/?authSource=ml4p&tls=true'
     db = MongoClient(uri).ml4p
-    # # languages = [ 'es2', 'ar', 'uk', 'ru', 'fr', 'zh'] #international
-    # languages = ['fr','es2','ar','sr','mk','ru'] #regional  Macedonian
+    # languages = [ 'es', 'ar', 'uk', 'ru', 'fr', 'zh'] #international
+    # # languages = ['fr','es2','ar','sr','mk','ru'] #regional  Macedonian
     # # languages = ['mk','ru']
     # # languages = ['pt2','km2']
     # # languages = ['ru','kg']
@@ -276,7 +276,7 @@ if __name__ == '__main__':
 
     # lan_dic = {'MOZ': ['pt2'], 'IDN': ['id'], 'CMR':['fr'], 'MAR':['ar','fr'], 'AGO': ['pt2'], 'PRY':['es'], 'MRT':['ar','fr']}
     # lan_dic = { 'DZA':['fr','ar'], 'ALB':['sq'],'MKD':['mk','sq'],'KHM':['km2'],'UKR':['uk','ru'],'UZB':['ru','uz'] }
-    lan_dic = {'ENV_SLV' :['es']}
+    lan_dic = {'ENV_INT' :['es']}
 
 
     for country, languages in lan_dic.items():
