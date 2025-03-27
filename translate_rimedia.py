@@ -23,8 +23,15 @@ def pull_data(colname, src, lan):
         'source_domain': {'$in': src},
         'include': True,
         'language': lan,
-        'title': {'$type': 'string', '$ne': ''},
-        'maintext': {'$type': 'string', '$ne': ''},
+        '$or':[{'title_translated': {'$exists': False}},
+                        {'maintext_translated': {'$exists': False}}
+                        ],
+        'title':{'$not': {'$type': 'null'}},
+        'title':{'$ne': ''},
+        'title':{'$type': 'string'},
+        'maintext':{'$not': {'$type': 'null'}},
+        'maintext':{'$ne': ''},
+        'maintext':{'$type': 'string'},
     })
     docs = [doc for doc in cursor]
     
