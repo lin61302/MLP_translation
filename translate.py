@@ -276,7 +276,7 @@ if __name__ == '__main__':
 
     # lan_dic = {'MOZ': ['pt2'], 'IDN': ['id'], 'CMR':['fr'], 'MAR':['ar','fr'], 'AGO': ['pt2'], 'PRY':['es'], 'MRT':['ar','fr']}
     # lan_dic = { 'DZA':['fr','ar'], 'ALB':['sq'],'MKD':['mk','sq'],'KHM':['km2'],'UKR':['uk','ru'],'UZB':['ru','uz'] }
-    lan_dic = {'NIC':['es']}
+    lan_dic = {'ENV_INT':['es2']}#'ENV_AGO':['pt2'],'ENV_BLR':['ru'],'ENV_':[],'ENV_':[],'ENV_':[],'ENV_':[],'ENV_':[],'ENV_':[],'ENV_':[],'ENV_':[]}
 
 
     for country, languages in lan_dic.items():
