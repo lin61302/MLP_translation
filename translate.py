@@ -280,7 +280,7 @@ if __name__ == '__main__':
     # lan_dic = {'ENV_AZE':['az'],'ENV_KGZ':['kg','ru'],'ENV_IDN':['id'],'ENV_MDA':['ro'],'ENV_MKD':['mk'],'ENV_COD':['fr'],'ENV_KAZ':['kk','ru'],'ENV_COL':['es'],'ENV_GTM':['es']}#,'ENV_':[],'ENV_':[]}
     # lan_dic = {'ENV_PRY':['es'], 'ENV_COL':['es'], 'ENV_TUN':['fr'],'ENV_BLR':['fr'],'ENV_IDN':['id'],'ENV_COD':['fr','ar'],'ENV_KHM':['km2'],'ENV_MLI':['fr']}
     # lan_dic = {'ENV_COL':['es'],'ENV_TUN':['fr'], 'ENV_DZA':['ar','fr'], 'ENV_PRY':['es'],  'ENV_XKX':['sq'],  'ENV_SEN':['fr'], 'ENV_IND':['hi'],'ENV_MOZ':['pt2'],'ENV_MEX':['es']}
-    lan_dic  = {'MEX':['es'],'MDA':['ro','ru'],'KGZ':['kg','ru']}
+    lan_dic  = {'LKA':['si']}
     # lan_dic = {'ENV_KGZ':['kg','ru'], 'ENV_TUN':['fr'], 'ENV_IDN':['id'], 'ENV_MRT':['fr'], 'ENV_PER':['es'], 'ENV_PRY':['es'], 'ENV_RWA':['rw'], 'ENV_SEN':['fr'], 'ENV_TUR':['tr'], 'ENV_UKR':['uk','ru'], 'ENV_XKX':['sq'],}
 
 
