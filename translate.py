@@ -251,14 +251,14 @@ class Translator:
 if __name__ == '__main__':
     uri = 'mongodb://zungru:balsas.rial.tanoaks.schmoe.coffing@db-wibbels.sas.upenn.edu/?authSource=ml4p&tls=true'
     db = MongoClient(uri).ml4p
-    # # languages = [ 'es2', 'ar', 'uk', 'ru', 'fr', 'zh'] #international
-    # languages = ['fr','es2','ar','sr','mk','ru'] #regional  Macedonian
-    # # languages = ['mk','ru']
-    # # languages = ['pt2','km2']
-    # # languages = ['ru','kg']
-    # # languages = ['km2']
-    # # #dont do uz for UZB
-    # # #dont do az for AZE
+    # languages = [ 'es2', 'ar', 'uk', 'ru', 'fr', 'zh'] #international
+    # # languages = ['fr','es2','ar','sr','mk','ru'] #regional  Macedonian
+    # # # languages = ['mk','ru']
+    # # # languages = ['pt2','km2']
+    # # # languages = ['ru','kg']
+    # # # languages = ['km2']
+    # # # #dont do uz for UZB
+    # # # #dont do az for AZE
     
     
     
@@ -267,8 +267,8 @@ if __name__ == '__main__':
     #     # source_domains = ['divergentes.com', 'revistafactum.com', 'alharaca.sv']
     #     # source_domains = db.sources.distinct('source_domain', filter={'include' : True, 'primary_location' : {'$in' : ['KHM']}})
     #     # source_domains = db.sources.distinct('source_domain', filter={'include' : True, 'primary_location' : {'$in' : ['MLI']}, 'primary_language':language})
-    #     # source_domains = db.sources.distinct('source_domain', filter={'include' : True, 'major_international' : True})
-    #     source_domains = db.sources.distinct('source_domain', filter={'include' : True, 'major_regional' : True})
+    #     source_domains = db.sources.distinct('source_domain', filter={'include' : True, 'major_international' : True})
+    #     # source_domains = db.sources.distinct('source_domain', filter={'include' : True, 'major_regional' : True})
     #     print(f'Start: {source_domains} -----in----- {languages}')
     #     translate_pipe(uri, language, 128, source_domains)
     # print(f'Done: {source_domains} -----in----- {languages}')
@@ -280,7 +280,7 @@ if __name__ == '__main__':
     # lan_dic = {'ENV_AZE':['az'],'ENV_KGZ':['kg','ru'],'ENV_IDN':['id'],'ENV_MDA':['ro'],'ENV_MKD':['mk'],'ENV_COD':['fr'],'ENV_KAZ':['kk','ru'],'ENV_COL':['es'],'ENV_GTM':['es']}#,'ENV_':[],'ENV_':[]}
     # lan_dic = {'ENV_PRY':['es'], 'ENV_COL':['es'], 'ENV_TUN':['fr'],'ENV_BLR':['fr'],'ENV_IDN':['id'],'ENV_COD':['fr','ar'],'ENV_KHM':['km2'],'ENV_MLI':['fr']}
     # lan_dic = {'ENV_COL':['es'],'ENV_TUN':['fr'], 'ENV_DZA':['ar','fr'], 'ENV_PRY':['es'],  'ENV_XKX':['sq'],  'ENV_SEN':['fr'], 'ENV_IND':['hi'],'ENV_MOZ':['pt2'],'ENV_MEX':['es']}
-    lan_dic  = {'DOM':['es'],'BLR':['ru','be']}
+    lan_dic  = {'UZB':['ru'],'AGO':['pt2'],'XKX':['sq'],'ALB':['sq'],'MKD':['sq','mk'],'BFA':['fr'],'CMR':['fr']}
     # lan_dic = {'ENV_KGZ':['kg','ru'], 'ENV_TUN':['fr'], 'ENV_IDN':['id'], 'ENV_MRT':['fr'], 'ENV_PER':['es'], 'ENV_PRY':['es'], 'ENV_RWA':['rw'], 'ENV_SEN':['fr'], 'ENV_TUR':['tr'], 'ENV_UKR':['uk','ru'], 'ENV_XKX':['sq'],}
 
 
